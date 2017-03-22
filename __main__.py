@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-
+divider = int(input("Enter a number: "))
 less_than = []
 for number in numbers:
-    if number < 5:
+    if number < divider:
         less_than.append(str(number))
 
-print("The numbers in the list less than 5 are %s" % ", ".join(less_than))
+print("The numbers in the list less than %d are %s" % (divider, ", ".join(less_than)))
 
