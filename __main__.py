@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-divider = int(input("Enter a number: "))
+
+try:
+    divider = int(input("Enter a number: "))
+except:
+    print("That's silly")
+    exit()
+
 less_than = []
 for number in numbers:
     if number < divider:
